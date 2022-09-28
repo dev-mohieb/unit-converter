@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+}
+#main-card {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: .5fr 1fr;
+    text-align: center;
+    width: 500px;
+}
+#top-part {
+    background-color: #6943FF;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem;
+    border-radius: 5px 5px 0 0;
+}
+#top-part h1 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+#number-input {
+    text-align: inherit;
+    font-family: inherit;
+    border: 2px solid #B295FF;
+    color: white;
+    max-width: fit-content;
+    background-color: #6943FF;
+    font-size: 3rem;
+    max-width: 120px;
+    border-radius: 5px;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    transition: border .2s ease;
+    transition: box-shadow .2s ease;
+}
+#number-input:focus {
+    outline: none;
+    border: 2px solid white;
+    box-shadow: 0 0px 20px 1px white;
+
+}
+#convert {
+    color: #3D3D3D;
+    background-color: white;
+    border: none;
+    padding: .5rem 2rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 500;
+    font-family: inherit;
+    transition: background-color .2s ease;
+}
+#convert:active {
+    background-color: #ccc;
+}
+#bottom-part {
+    padding: 1.5rem;
+    border-radius: 0 0 5px 5px;
+}
+.result {
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+.result:last-of-type {
+    margin-bottom: 0;
+}
+.result h2 {
+    color: #5A537B;
+    font-weight: 600;
+    font-size: 1.225rem;
+    margin: .5rem 0;
+}
+.result p {
+    margin: .5rem 0;
+    font-size: .9rem;
+}
+
+.light-mode-result {
+    background-color: white;
+}
+.light-mode-bottom {
+    background-color: #F4F4F4;
+    color: #353535;
+}
+.dark-mode-result {
+    background-color: #273549;
+}
+.dark-mode-bottom {
+    background-color: #1F2937;
+    color: white;
+}
+.shadow {
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .1);
+}
+footer {
+    margin-top: 1rem;
+}
+footer a {
+    color: #6943FF;
+    text-decoration: none;
+}
+/* Hide input arrows */
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}

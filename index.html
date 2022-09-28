@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit Converter</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js" defer></script>
+</head>
+<body>
+    <main id="main-card">
+        <header id="top-part">
+            <h1>Metric/Imperial Unit Conversion</h1>
+            <input id="number-input" type="number" required autocomplete="off" min="1" minlength="1" autofocus>
+            <button id="convert" class="shadow">Convert</button>
+        </header>
+        <section id="bottom-part" class="light-mode-bottom shadow">
+            <article id="length" class="result light-mode-result shadow">
+                <h2>Length (Meter/Feet)</h2>
+                <p id="length-el">Meters = Feet |  Feet = Meters</p>
+            </article>
+            <article id="volume" class="result light-mode-result shadow">
+                <h2>Volume (Liters/Gallons)</h2>
+                <p id="volume-el">Liters = Gallons | Gallons = Liters</p>
+            </article>
+            <article id="mass" class="result light-mode-result shadow">
+                <h2>Mass (Kilograms/Pounds)</h2>
+                <p id="mass-el">1 Kilograms = Pounds | Pounds = Kilograms</p>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>
+            Created by <a href="https://www.github.com/dev-mohieb">Muheeb</a>
+        </p>
+    </footer>
+</body>
+</html>
